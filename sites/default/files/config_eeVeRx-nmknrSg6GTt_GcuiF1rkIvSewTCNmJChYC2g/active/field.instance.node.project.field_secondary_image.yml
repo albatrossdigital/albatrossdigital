@@ -1,0 +1,18 @@
+id: node.project.field_secondary_image
+uuid: 62466ca8-556b-4acf-a435-539b70a4ef29
+status: '1'
+langcode: en
+field_uuid: f930f302-a762-4d13-b800-dbaad28fa962
+entity_type: node
+bundle: project
+label: 'Secondary Images'
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  file_directory: projects
+  file_extensions: 'jpg gif png'
+  max_filesize: ''
+  description_field: '0'
+field_type: file

@@ -1,0 +1,18 @@
+id: node.project.field_primary_image
+uuid: f479ac35-4851-4640-8600-ec4a2cf4a351
+status: '1'
+langcode: en
+field_uuid: 9051622c-de90-4403-b609-09d3dea029c2
+entity_type: node
+bundle: project
+label: 'Primary Image'
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  file_directory: projects
+  file_extensions: 'jpg png gif'
+  max_filesize: ''
+  description_field: '0'
+field_type: file

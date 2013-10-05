@@ -1,0 +1,129 @@
+base_field: nid
+base_table: node
+core: 8.x
+description: ''
+status: '1'
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: '1'
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: none
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: '0'
+          distinct: '0'
+          slave: '0'
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: '0'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: '1'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: none
+        options:
+          items_per_page: ''
+          offset: '0'
+      style:
+        type: html_list
+      row:
+        type: fields
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          provider: node
+          label: ''
+          alter:
+            alter_text: '0'
+            make_link: '0'
+            absolute: '0'
+            trim: '0'
+            word_boundary: '0'
+            ellipsis: '0'
+            strip_tags: '0'
+            html: '0'
+          hide_empty: '0'
+          empty_zero: '0'
+          link_to_node: '1'
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exclude: '0'
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: '1'
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: '1'
+          empty: ''
+          hide_alter_empty: '1'
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          provider: node
+          id: status
+          expose:
+            operator: '0'
+          group: '1'
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: '0'
+          expose:
+            label: ''
+          granularity: second
+      title: Projects
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: '1'
+    display_options:
+      field:
+        title:
+          link_to_node: '1'
+label: Projects
+module: views
+id: projects
+tag: ''
+uuid: 11e3791e-2293-4b9f-aa00-d6b27053f1f3
+langcode: en

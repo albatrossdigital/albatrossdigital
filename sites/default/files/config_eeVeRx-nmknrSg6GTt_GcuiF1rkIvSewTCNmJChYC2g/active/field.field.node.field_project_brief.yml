@@ -1,0 +1,14 @@
+id: node.field_project_brief
+uuid: a0844659-3f4b-4899-8217-2301ac72943b
+status: '1'
+langcode: en
+name: field_project_brief
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+active: '1'
+locked: '0'
+cardinality: '1'
+translatable: '0'
+indexes: {  }

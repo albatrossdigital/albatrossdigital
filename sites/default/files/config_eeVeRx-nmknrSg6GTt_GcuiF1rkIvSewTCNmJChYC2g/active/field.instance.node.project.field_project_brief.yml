@@ -1,0 +1,15 @@
+id: node.project.field_project_brief
+uuid: 4bd30568-112e-45f7-913b-59ef28a0aa2b
+status: '1'
+langcode: en
+field_uuid: a0844659-3f4b-4899-8217-2301ac72943b
+entity_type: node
+bundle: project
+label: 'Project Brief'
+description: ''
+required: '1'
+default_value: {  }
+default_value_function: ''
+settings:
+  text_processing: '0'
+field_type: text_long

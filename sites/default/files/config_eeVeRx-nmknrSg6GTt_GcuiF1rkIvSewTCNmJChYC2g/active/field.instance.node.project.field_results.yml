@@ -1,0 +1,15 @@
+id: node.project.field_results
+uuid: 8e8d7806-fb7b-47ec-9657-875bd5a9d3b4
+status: '1'
+langcode: en
+field_uuid: d4c11510-74ee-46d8-b307-7a5018d35846
+entity_type: node
+bundle: project
+label: Results
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  text_processing: '1'
+field_type: text_long

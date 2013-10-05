@@ -1,0 +1,18 @@
+type: project
+uuid: 8ae15ba4-2ccc-4697-8d00-a4812a59fe3d
+name: Project
+description: ''
+help: ''
+has_title: '1'
+title_label: Title
+settings:
+  node:
+    preview: '0'
+    options:
+      status: status
+      promote: promote
+      sticky: '0'
+      revision: '0'
+    submitted: '0'
+status: '1'
+langcode: en

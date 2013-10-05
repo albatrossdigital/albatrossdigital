@@ -1,0 +1,17 @@
+id: node.field_primary_image
+uuid: 9051622c-de90-4403-b609-09d3dea029c2
+status: '1'
+langcode: en
+name: field_primary_image
+entity_type: node
+type: file
+settings:
+  uri_scheme: public
+  display_field: '0'
+  display_default: '0'
+module: file
+active: '1'
+locked: '0'
+cardinality: '-1'
+translatable: '0'
+indexes: {  }

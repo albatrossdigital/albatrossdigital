@@ -1,0 +1,15 @@
+id: node.project.field_challenges
+uuid: 4431f195-8e8d-41c6-9b00-ca8e18c0009c
+status: '1'
+langcode: en
+field_uuid: 67f78c8e-3730-4788-8b42-669bb273ef72
+entity_type: node
+bundle: project
+label: Challenges
+description: ''
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  text_processing: '1'
+field_type: text_long

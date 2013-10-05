@@ -1,0 +1,6 @@
+id: node.project.teaser
+uuid: 7a6ffe16-2331-404e-9b51-8111dca6aec6
+targetEntityType: node
+bundle: project
+mode: teaser
+content: {  }

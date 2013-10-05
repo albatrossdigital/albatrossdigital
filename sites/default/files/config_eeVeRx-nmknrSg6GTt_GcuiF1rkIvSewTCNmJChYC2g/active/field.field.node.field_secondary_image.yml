@@ -1,0 +1,17 @@
+id: node.field_secondary_image
+uuid: f930f302-a762-4d13-b800-dbaad28fa962
+status: '1'
+langcode: en
+name: field_secondary_image
+entity_type: node
+type: file
+settings:
+  uri_scheme: public
+  display_field: '0'
+  display_default: '0'
+module: file
+active: '1'
+locked: '0'
+cardinality: '2'
+translatable: '0'
+indexes: {  }

@@ -1,0 +1,33 @@
+id: node.project.default
+uuid: 2ba7f2d0-2771-4c76-b51c-2816e1ec8195
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  field_primary_image:
+    type: file_default
+    weight: '1'
+    settings: {  }
+    label: hidden
+  field_secondary_image:
+    type: file_default
+    weight: '2'
+    settings: {  }
+    label: hidden
+  field_project_brief:
+    type: text_default
+    weight: '3'
+    settings: {  }
+    label: inline
+  field_challenges:
+    type: text_default
+    weight: '4'
+    settings: {  }
+    label: inline
+  field_results:
+    type: text_default
+    weight: '5'
+    settings: {  }
+    label: inline
+  language:
+    visible: '0'
