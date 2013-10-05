@@ -1,0 +1,13 @@
+id: taxonomy_term.tags
+uuid: 12edb6fa-99db-4773-bd00-cd68d26650fd
+targetEntityType: taxonomy_term
+bundle: tags
+types:
+  - 'schema:Thing'
+fieldMappings:
+  name:
+    properties:
+      - 'schema:name'
+  description:
+    properties:
+      - 'schema:description'

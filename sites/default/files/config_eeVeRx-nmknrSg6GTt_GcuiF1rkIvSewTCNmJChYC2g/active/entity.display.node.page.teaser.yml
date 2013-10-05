@@ -1,0 +1,12 @@
+id: node.page.teaser
+uuid: f63e0012-83cc-4774-9a00-e8cbd709dd47
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: '0'
+    settings:
+      trim_length: '600'

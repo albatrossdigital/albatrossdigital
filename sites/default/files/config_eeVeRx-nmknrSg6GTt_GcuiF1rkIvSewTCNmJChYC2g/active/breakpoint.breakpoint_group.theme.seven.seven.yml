@@ -1,0 +1,11 @@
+id: theme.seven.seven
+uuid: c39c556b-5cdb-4669-a700-ad7cf4916bd5
+name: seven
+label: Seven
+breakpoints:
+  - theme.seven.mobile
+  - theme.seven.wide
+source: seven
+sourceType: theme
+status: '1'
+langcode: en

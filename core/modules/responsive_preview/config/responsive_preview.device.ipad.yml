@@ -1,0 +1,10 @@
+id: ipad
+label: iPad
+dimensions:
+  width: 1536
+  height: 2048
+  dppx: 2
+orientation: portrait
+weight: 5
+status: 1
+langcode: en

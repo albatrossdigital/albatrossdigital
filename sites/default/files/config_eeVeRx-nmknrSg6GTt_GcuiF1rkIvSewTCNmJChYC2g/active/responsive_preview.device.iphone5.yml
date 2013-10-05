@@ -1,0 +1,11 @@
+id: iphone5
+uuid: 0793a136-fe35-4206-bf5a-902cd8f46999
+label: 'iPhone 5'
+weight: '3'
+orientation: portrait
+dimensions:
+  width: '640'
+  height: '1136'
+  dppx: '2'
+status: '1'
+langcode: en

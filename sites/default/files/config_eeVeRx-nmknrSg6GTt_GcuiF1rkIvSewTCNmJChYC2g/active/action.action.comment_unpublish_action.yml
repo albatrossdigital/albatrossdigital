@@ -1,0 +1,8 @@
+id: comment_unpublish_action
+label: 'Unpublish comment'
+uuid: 24c14f73-d43c-46a9-9756-8629ea0375a7
+status: '1'
+langcode: en
+type: comment
+plugin: comment_unpublish_action
+configuration: {  }

@@ -1,0 +1,15 @@
+id: comment.comment_node_page.comment_body
+uuid: dcdc1bf4-d705-4b6b-b500-fff0a90cd19a
+status: '1'
+langcode: en
+field_uuid: 9f46d167-91a8-4143-8a04-4e75cf314718
+entity_type: comment
+bundle: comment_node_page
+label: Comment
+description: ''
+required: '1'
+default_value: {  }
+default_value_function: ''
+settings:
+  text_processing: '1'
+field_type: text_long

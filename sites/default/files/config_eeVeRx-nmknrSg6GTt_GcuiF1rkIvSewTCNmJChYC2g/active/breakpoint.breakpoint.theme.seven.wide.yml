@@ -1,0 +1,12 @@
+id: theme.seven.wide
+uuid: fae14d10-5a74-4aad-8800-a857ca35634b
+name: wide
+label: wide
+mediaQuery: 'screen and (min-width: 40em)'
+source: seven
+sourceType: theme
+weight: '1'
+multipliers:
+  1x: 1x
+status: '1'
+langcode: en

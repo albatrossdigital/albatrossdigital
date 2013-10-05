@@ -1,0 +1,6 @@
+id: custom_block.full
+uuid: 807e36cc-0542-4152-9d00-f766538551f8
+label: Full
+targetEntityType: custom_block
+status: '0'
+langcode: en

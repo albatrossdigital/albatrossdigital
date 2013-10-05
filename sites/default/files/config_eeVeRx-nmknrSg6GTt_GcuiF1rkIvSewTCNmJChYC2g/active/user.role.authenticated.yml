@@ -1,0 +1,14 @@
+id: authenticated
+uuid: 73cdfd2d-5829-4937-bf00-fe2f976532a2
+label: 'Authenticated user'
+weight: '1'
+permissions:
+  - 'use text format plain_text'
+  - 'use text format basic_html'
+  - 'access content'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access site-wide contact form'
+status: '1'
+langcode: en

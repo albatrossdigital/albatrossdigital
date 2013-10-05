@@ -1,0 +1,10 @@
+id: nexus4
+label: Nexus 4
+dimensions:
+  width: 768
+  height: 1280
+  dppx: 2
+orientation: portrait
+weight: 6
+status: 1
+langcode: en

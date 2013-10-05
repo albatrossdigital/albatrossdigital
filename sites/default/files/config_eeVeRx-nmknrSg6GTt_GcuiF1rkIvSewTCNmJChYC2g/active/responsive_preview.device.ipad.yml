@@ -1,0 +1,11 @@
+id: ipad
+uuid: f9c822f2-6ac3-4edd-9300-d1c5f8b72e38
+label: iPad
+weight: '5'
+orientation: portrait
+dimensions:
+  width: '1536'
+  height: '2048'
+  dppx: '2'
+status: '1'
+langcode: en

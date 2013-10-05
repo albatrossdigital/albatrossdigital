@@ -1,0 +1,10 @@
+id: nexus7
+label: Nexus 7
+dimensions:
+  width: 800
+  height: 1280
+  dppx: 1.325
+orientation: portrait
+weight: 7
+status: 1
+langcode: en

@@ -1,0 +1,10 @@
+id: iphone5
+label: iPhone 5
+dimensions:
+  width: 640
+  height: 1136
+  dppx: 2
+orientation: portrait
+weight: 3
+status: 1
+langcode: en

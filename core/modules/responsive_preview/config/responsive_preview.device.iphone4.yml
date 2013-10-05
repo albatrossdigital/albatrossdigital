@@ -1,0 +1,10 @@
+id: iphone4
+label: iPhone 4
+dimensions:
+  width: 640
+  height: 960
+  dppx: 2
+orientation: portrait
+weight: 4
+status: 0
+langcode: en

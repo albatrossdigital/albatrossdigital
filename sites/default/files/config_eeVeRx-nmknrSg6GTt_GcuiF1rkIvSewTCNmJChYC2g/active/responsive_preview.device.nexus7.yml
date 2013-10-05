@@ -1,0 +1,11 @@
+id: nexus7
+uuid: 7ed8f12c-d360-48d2-8b00-ebd99363cc49
+label: 'Nexus 7'
+weight: '7'
+orientation: portrait
+dimensions:
+  width: '800'
+  height: '1280'
+  dppx: '1.325'
+status: '1'
+langcode: en

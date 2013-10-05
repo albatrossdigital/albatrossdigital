@@ -1,0 +1,28 @@
+responsive_preview_device_list:
+  pattern: '/admin/config/content/responsive-preview'
+  defaults:
+    _content: '\Drupal\Core\Entity\Controller\EntityListController::listing'
+    entity_type: 'responsive_preview_device'
+  requirements:
+    _permission: 'administer site configuration'
+
+responsive_preview_device_add:
+  pattern: '/admin/config/content/responsive-preview/add'
+  defaults:
+    _entity_form: responsive_preview_device.add
+  requirements:
+    _permission: 'administer site configuration'
+
+responsive_preview_device_edit:
+  pattern: '/admin/config/content/responsive-preview/manage/{responsive_preview_device}'
+  defaults:
+    _entity_form: responsive_preview_device.edit
+  requirements:
+    _permission: 'administer site configuration'
+
+responsive_preview_device_delete:
+  pattern: '/admin/config/content/responsive-preview/manage/{responsive_preview_device}/delete'
+  defaults:
+    _entity_form: responsive_preview_device.delete
+  requirements:
+    _permission: 'administer site configuration'

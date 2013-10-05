@@ -32,13 +32,21 @@ function initContextualToolbar (context) {
   new contextualToolbar.VisualView(viewOptions);
   new contextualToolbar.AuralView(viewOptions);
 
-  // Update the model based on overlay events.
   $(document).on({
+    // Update the model based on overlay events.
     'drupalOverlayOpen.contextualToolbar': function () {
       model.set('overlayIsOpen', true);
     },
     'drupalOverlayClose.contextualToolbar': function () {
       model.set('overlayIsOpen', false);
+      model.set('isVisible', true);
+    },
+    // Update the model based on Responsive Preview events.
+    'drupalResponsivePreviewStarted.contextualToolbar': function () {
+      model.set('isVisible', false);
+    },
+    'drupalResponsivePreviewStopped.contextualToolbar': function () {
+      model.set('isVisible', true);
     }
   });
 

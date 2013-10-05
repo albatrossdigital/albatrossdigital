@@ -1,0 +1,12 @@
+id: theme.stark.narrow
+uuid: 148eabca-792c-4e6b-9a01-1a57a3cf2f75
+name: narrow
+label: narrow
+mediaQuery: 'all and (min-width: 480px) and (max-width: 959px)'
+source: stark
+sourceType: theme
+weight: '1'
+multipliers:
+  1x: 1x
+status: '1'
+langcode: en

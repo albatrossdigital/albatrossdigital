@@ -1,0 +1,6 @@
+id: admin
+uuid: c6f7f10f-c77d-4dcb-8900-cb745302d6bf
+label: Administration
+description: 'Contains links to administrative tasks.'
+status: '1'
+langcode: en

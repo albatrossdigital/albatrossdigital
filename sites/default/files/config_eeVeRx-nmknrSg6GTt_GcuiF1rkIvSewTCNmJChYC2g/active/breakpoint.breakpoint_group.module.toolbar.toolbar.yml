@@ -1,0 +1,12 @@
+id: module.toolbar.toolbar
+uuid: 7bf24fd7-6d88-4fca-9a06-6e035885ac5d
+name: toolbar
+label: toolbar
+breakpoints:
+  - module.toolbar.narrow
+  - module.toolbar.standard
+  - module.toolbar.wide
+source: toolbar
+sourceType: module
+status: '1'
+langcode: en

@@ -1,0 +1,46 @@
+name: Spark
+type: profile
+description: 'Cutting-edge authoring experience improvements for Drupal.'
+core: 8.x
+
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution_name: Spark
+
+# Mark this as an 'exclusive' profile, so if it's the only one, it gets auto-
+# selected by default.
+exclusive: 1
+
+# Required modules
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - custom_block
+  - edit
+  - help
+  - image
+  - menu
+  - number
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - responsive_preview
+  - search
+  - shortcut
+  - toolbar
+  - overlay
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - editor
+  - ckeditor

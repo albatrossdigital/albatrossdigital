@@ -1,0 +1,12 @@
+id: user.user.default
+uuid: 33fe04cf-7acb-46a8-9641-656c369f484b
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    weight: '-1'

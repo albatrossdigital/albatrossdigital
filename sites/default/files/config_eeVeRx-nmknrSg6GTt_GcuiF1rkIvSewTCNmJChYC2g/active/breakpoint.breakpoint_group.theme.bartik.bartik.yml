@@ -1,0 +1,12 @@
+id: theme.bartik.bartik
+uuid: 3ab2ca10-cc34-4ec3-9400-a290ff6e18f0
+name: bartik
+label: Bartik
+breakpoints:
+  - theme.bartik.mobile
+  - theme.bartik.narrow
+  - theme.bartik.wide
+source: bartik
+sourceType: theme
+status: '1'
+langcode: en

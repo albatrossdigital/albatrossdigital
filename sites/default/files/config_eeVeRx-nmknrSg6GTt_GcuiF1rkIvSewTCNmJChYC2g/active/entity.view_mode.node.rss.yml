@@ -1,0 +1,6 @@
+id: node.rss
+uuid: 7ce90ef8-c19b-4a2f-9118-2481b9c71ebd
+label: RSS
+targetEntityType: node
+status: '0'
+langcode: en

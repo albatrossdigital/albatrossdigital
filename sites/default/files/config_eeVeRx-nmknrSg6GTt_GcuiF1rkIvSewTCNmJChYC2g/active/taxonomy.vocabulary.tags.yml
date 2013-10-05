@@ -1,0 +1,8 @@
+vid: tags
+uuid: 807c7fa5-5ba9-4f40-ba00-a32d07831464
+name: Tags
+description: 'Use tags to group articles on similar topics into categories.'
+hierarchy: '0'
+weight: '0'
+status: '1'
+langcode: en

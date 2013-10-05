@@ -1,0 +1,11 @@
+id: iphone4
+uuid: dd165fe6-f67e-4047-8604-4a66ef9bfd48
+label: 'iPhone 4'
+weight: '4'
+orientation: portrait
+dimensions:
+  width: '640'
+  height: '960'
+  dppx: '2'
+status: '0'
+langcode: en

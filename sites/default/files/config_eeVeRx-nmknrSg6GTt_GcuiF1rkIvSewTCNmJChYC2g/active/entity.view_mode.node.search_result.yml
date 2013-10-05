@@ -1,0 +1,6 @@
+id: node.search_result
+uuid: bed62301-810f-4213-ab04-4e6b28c7e804
+label: 'Search result'
+targetEntityType: node
+status: '0'
+langcode: en

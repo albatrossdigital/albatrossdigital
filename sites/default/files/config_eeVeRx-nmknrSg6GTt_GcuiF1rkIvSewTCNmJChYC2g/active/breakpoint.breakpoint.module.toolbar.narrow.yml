@@ -1,0 +1,12 @@
+id: module.toolbar.narrow
+uuid: 7f030e0e-a868-4ce3-b20e-14d4a6afbbda
+name: narrow
+label: narrow
+mediaQuery: 'only screen and (min-width: 16.5em)'
+source: toolbar
+sourceType: module
+weight: '0'
+multipliers:
+  1x: 1x
+status: '1'
+langcode: en

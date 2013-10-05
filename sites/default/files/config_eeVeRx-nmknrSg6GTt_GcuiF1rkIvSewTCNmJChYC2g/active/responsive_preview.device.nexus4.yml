@@ -1,0 +1,11 @@
+id: nexus4
+uuid: 5368eb49-1508-49e5-9700-faf31b2c6505
+label: 'Nexus 4'
+weight: '6'
+orientation: portrait
+dimensions:
+  width: '768'
+  height: '1280'
+  dppx: '2'
+status: '1'
+langcode: en

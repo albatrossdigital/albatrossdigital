@@ -1,0 +1,108 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the spark install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function spark_install() {
+  // First, do everything in standard profile.
+  // @todo: I would ideally like for this to be a simple call to
+  // module_load_install('standard') but that doesn't seem to fly.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  // Create an "About Us" page, for testing content links in Aloha.
+  // @todo: It's really stupid we have to do this here instead of in spark_demo module,
+  // but 'page' doesn't exist yet when spark_demo_install() runs. :(
+  $node_body = array(
+    'value' => t('<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+
+<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+
+<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>'),
+    'format' => 'basic_html',
+  );
+  $edit_node = array(
+    'nid' => NULL,
+    'type' => 'page',
+    'uid' => 1,
+    'status' => TRUE,
+    'langcode' => 'en',
+    'title' => t('About Us'),
+    'body' => array($node_body),
+  );
+  $node = entity_create('node', $edit_node);
+  $node->save();
+
+  $menu_link = entity_create('menu_link', array(
+     'link_title' => t('About us'),
+     'link_path' => 'node/1',
+     'menu_name' => 'main',
+  ));
+  $menu_link->save();
+
+  // Create a new 'article' node for testing editing.
+  // @todo: It would be great to just show this as full node rather than having
+  // to do this "Read More" business. Blocked by http://drupal.org/node/1723126.
+  $node_body = array(
+    'value' => t('<p>Welcome to a pre-release version of the <a href="@spark-project-url">Spark distribution</a>! This distribution ties together all of our current D8 core and contrib work into a single distribution to it off. Our goal is to greatly improve the authoring experience of Drupal, through a Drupal 7 distribution that can be used today, but can also be proposed as Drupal 8 core improvements for tomorrow. You can read more about it at <a href="@spark-announce-url">the official announcement</a> or at <a href="@spark-microsite-url">www.sparkdrupal.com</a>. Read on for more info!</p>
+
+<img src="http://drupal.org/files/imagecache/grid-3/project-images/spark_logo.png" alt="Spark Logo" style="float:right; height:100px; margin:20px; width:193px" />
+
+<p>Here are the current features of Spark D8:</p>
+
+<ul>
+  <li><strong>"True" WYSIWYG</strong>, courtesy of <a href="@aloha-url">Aloha Editor</a>. Just click "Edit" on this node to check it out. See http://drupal.org/node/1706688 for the "meta" issue on this, for ways in which you can help!</li>
+  <li><strong>Responsive Layout Builder</strong>, courtesy of the <a href="@module-layout-url">Layout</a>, <a href="@module-region-url">Region</a>, <a href="@module-bunnypoint-url">Bunnypoint</a>, and <a href="@module-grid-url">Gridbuilder</a> modules. While core doesn\'t currently have anything to tie these layouts to (we\'re working on the underpinnings in http://drupal.org/node/1787634 — please join us!), you can play around with these modules under Administer >> Structure.</li>
+  <li><strong>Mobile-friendly toolbar</strong> Hey, speaking of navigating, there\'s a new toolbar design from http://drupal.org/node/1137920, intended to work well with mobile browsers and desktops alike! Check it out. :)</li>
+</ul>
+
+<p>We hope you enjoy playing with Spark! We greatly welcome collaboration; join us in the <a href="@spark-issues-url">issue queue</a></p>!', array(
+  '@spark-project-url' => 'http://drupal.org/project/spark',
+  '@spark-announce-url' => 'http://buytaert.net/announcing-spark-authoring-improvements-for-drupal-7-and-drupal-8',
+  '@spark-microsite-url' => 'http://www.sparkdrupal.com/',
+  '@spark-issues-url' => 'http://drupal.org/project/issues/spark',
+  '@module-edit-url' => 'http://drupal.org/project/edit',
+  '@module-layout-url' => 'http://drupal.org/project/layout',
+  '@module-region-url' => 'http://drupal.org/project/region',
+  '@module-bunnypoint-url' => 'http://drupal.org/project/bunnypoint',
+  '@module-grid-url' => 'http://drupal.org/project/gridbuilder',
+  '@theme-ember-url' => 'http://drupal.org/project/ember',
+  '@aloha-url' => 'http://aloha-editor.org/',
+  '@admin-layout-url' => url('admin/structure/panels/layouts/list/default/edit'),
+)),
+    'format' => 'full_html',
+  );
+  $edit_node = array(
+    'nid' => NULL,
+    'type' => 'article',
+    'uid' => 1,
+    'status' => TRUE,
+    'promote' => TRUE,
+    'langcode' => 'en',
+    'title' => t('Welcome to Spark!'),
+    'body' => array($node_body),
+  );
+  $node = entity_create('node', $edit_node);
+
+  $terms = array();
+  foreach (array('tag 1', 'another tag', 'yet another tag') as $name) {
+    $term_values = array(
+      'vocabulary_machine_name' => 'tags',
+      'vid' => 'tags',
+      'name' => $name,
+    );
+    $term = entity_create('taxonomy_term', $term_values);
+    $term->save();
+    $terms[] = array('target_id' => $term->id());
+  }
+  $node->set('field_tags', $terms);
+  $node->save();
+}
