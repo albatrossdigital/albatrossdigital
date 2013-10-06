@@ -1,0 +1,48 @@
+name: albatross-bartik
+type: theme
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: Core
+version: VERSION
+core: 8.x
+stylesheets:
+  all:
+    #- css/layout.css
+    - css/custom.css
+  print:
+    - css/print.css
+
+scripts:
+  - js/scripts.js
+
+# Regions are output in the page.tpl.php
+
+regions:
+  header: Header
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured: Featured
+  content: Content 1 (Main)
+  content_footer: Content 1 Footer
+  content_2: Content 2
+  content_2_footer: Content 2 Footer
+  content_3: Content 3
+  content_3_footer: Content 3 Footer
+  content_4: Content 4
+  content_4_footer: Content 4 Footer
+  content_5: Content 5
+  content_5_footer: Content 5 Footer
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  triptych_first: 'Triptych first'
+  triptych_middle: 'Triptych middle'
+  triptych_last: 'Triptych last'
+  footer_firstcolumn: 'Footer first column'
+  footer_secondcolumn: 'Footer second column'
+  footer_thirdcolumn: 'Footer third column'
+  footer_fourthcolumn: 'Footer fourth column'
+  footer: Footer
+# @todo D8: Remove once themes have to be installed.
+settings:
+  shortcut_module_link: '0'
